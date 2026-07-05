@@ -40,19 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial Loading Animation
   const tl = gsap.timeline()
   
-  tl.fromTo('.nav', 
-    { y: -100, opacity: 0 },
-    { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
-  )
-  .fromTo('[data-animate="fade-up"]',
-    { y: 50, opacity: 0 },
-    { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
-    "-=0.5"
-  )
-  .fromTo('.slider-container',
+  if (window.innerWidth > 992) {
+    tl.fromTo('.nav', 
+      { y: -100, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+    )
+    .fromTo('[data-animate="fade-up"]',
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
+      "-=0.5"
+    )
+  }
+  
+  tl.fromTo('.slider-container',
     { scale: 0.8, opacity: 0, rotation: -5 },
     { scale: 1, opacity: 1, rotation: 0, duration: 1.5, ease: 'elastic.out(1, 0.5)' },
-    "-=1"
+    window.innerWidth > 992 ? "-=1" : 0
   )
   .fromTo('.glow-effect',
     { opacity: 0, scale: 0 },
