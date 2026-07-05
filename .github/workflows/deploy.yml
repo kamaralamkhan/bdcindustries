@@ -1,0 +1,35 @@
+name: Build and Deploy to Hostinger Branch
+
+on:
+  push:
+    branches:
+      - main # This triggers the action when you push to the main branch
+
+jobs:
+  build-and-push:
+    name: Build Vite App
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Ensure we use a modern Node version
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build the Project
+        run: npm run build
+
+      - name: Push built files to 'hostinger-deploy' branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: hostinger-deploy # This is the branch Hostinger will read from
+          FOLDER: dist # Vite builds into the 'dist' folder
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Auto-build from GitHub Actions"
