@@ -621,23 +621,40 @@ h1, h2, h3, h4, .eyebrow {
   .nav-links {
     position: fixed;
     top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 300px;
+    left: 0;
+    width: 100vw;
     height: 100vh;
-    background: var(--bg-card);
+    background: rgba(10, 10, 12, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: right 0.4s var(--ease-smooth);
-    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    transition: opacity 0.4s var(--ease-smooth), visibility 0.4s;
+    opacity: 0;
+    visibility: hidden;
     display: flex;
+    z-index: 990;
   }
 
   .nav-links.active {
-    right: 0;
+    opacity: 1;
+    visibility: visible;
   }
   
+  .nav-links a {
+    font-size: 1.75rem;
+    margin: 1.2rem 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+  
+  .nav-links a:hover, .nav-links a:active {
+    opacity: 1;
+    color: var(--accent);
+  }
+
   /* Menu toggle animation */
   .mobile-menu-btn.active span:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 5px);
