@@ -658,6 +658,26 @@ h1, h2, h3, h4, .eyebrow {
   .hero-cta {
     justify-content: center;
   }
+  
+  /* Mobile Horizontal Slider */
+  .slider-container {
+    height: 220px;
+    max-width: 100vw;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .slider-track {
+    flex-direction: row;
+    gap: 20px;
+    width: max-content;
+    animation: scrollHorizontal 15s linear infinite;
+  }
+  .slider-img {
+    width: 200px;
+    min-width: 200px;
+    height: 180px;
+  }
+  
   .product-card, .product-card.reverse, .facility-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -666,4 +686,9 @@ h1, h2, h3, h4, .eyebrow {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+}
+
+@keyframes scrollHorizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-5 * 220px)); }
 }
