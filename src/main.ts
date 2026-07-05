@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { y: 0, opacity: 1, duration: 0.8, stagger: 0.2, ease: 'power3.out' },
     "-=0.5"
   )
-  .fromTo('.hero-img',
+  .fromTo('.slider-container',
     { scale: 0.8, opacity: 0, rotation: -5 },
     { scale: 1, opacity: 1, rotation: 0, duration: 1.5, ease: 'elastic.out(1, 0.5)' },
     "-=1"
