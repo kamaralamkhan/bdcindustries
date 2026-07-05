@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | BDC Industries</title>
+    <meta name="description" content="Contact BDC Industries for high-quality gas stoves, mixing tubes, and burner parts. Get a quote for bulk manufacturing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      .contact-form-container {
+        background: var(--bg-card);
+        padding: 3rem;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+      }
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+      .form-label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-secondary);
+      }
+      .form-control {
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255,255,255,0.05);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        border-radius: 4px;
+        font-family: var(--font-sans);
+        transition: border-color 0.3s;
+      }
+      .form-control:focus {
+        outline: none;
+        border-color: var(--accent);
+      }
+      .btn-submit {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-dark">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="/index.html" class="logo">
+          <img src="/images/logo.svg" alt="BDC Industries Logo" />
+        </a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="/index.html#products" class="nav-link">Products</a>
+          <a href="/index.html#facility" class="nav-link">Facility</a>
+          <a href="/about.html" class="nav-link">About Us</a>
+          <a href="/contact.html" class="nav-link">Contact Us</a>
+          <a href="/contact.html" class="btn btn-primary">Request Quote</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="section" style="padding-top: 10rem; padding-bottom: 2rem;">
+      <div class="section-header text-center">
+        <h1 class="section-title">Get in Touch</h1>
+        <p class="section-desc" style="margin: 0 auto;">Connect with our engineering team for custom quotes and OEM manufacturing queries.</p>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="product-card" style="align-items: flex-start;">
+        <div class="contact-form-container">
+          <h2 class="product-name" style="font-size: 1.5rem;">Send us a Message</h2>
+          <form onsubmit="event.preventDefault(); alert('Thank you for contacting us. We will get back to you shortly.');">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="company@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone / WhatsApp</label>
+              <input type="tel" class="form-control" placeholder="Your phone number" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message Requirements</label>
+              <textarea class="form-control" rows="4" placeholder="Detail your product requirements or attach specs..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">Submit Request</button>
+          </form>
+        </div>
+        
+        <div class="product-info">
+          <h3 class="product-name">Direct Contact Info</h3>
+          <p class="product-desc">Prefer speaking to us directly? Use the details below or message us on WhatsApp.</p>
+          
+          <ul class="product-specs" style="margin-top: 2rem; border-left: none; padding-left: 0;">
+            <li style="margin-bottom: 1.5rem;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.5rem;">Owner & Management</strong>
+              Narayan Singh
+            </li>
+            <li style="margin-bottom: 1.5rem;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.5rem;">Phone / WhatsApp</strong>
+              <a href="tel:+919313074054" class="contact-link" style="display: block; margin-bottom: 0.3rem;">+91 9313074054</a>
+              <a href="tel:+919999391754" class="contact-link">+91 9999391754</a>
+            </li>
+            <li style="margin-bottom: 1.5rem;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.5rem;">Email Address</strong>
+              <a href="mailto:Sumit.pdps@gmail.com" class="contact-link">Sumit.pdps@gmail.com</a>
+            </li>
+            <li style="margin-bottom: 1.5rem;">
+              <strong style="color: #fff; display: block; margin-bottom: 0.5rem;">Factory Address</strong>
+              <a href="https://maps.google.com/?q=C-26, Ambey Garden, Libaspur, Samaypur Badli, New Delhi, India" target="_blank" class="contact-link" rel="noopener noreferrer">
+                C-26, Ambey Garden,<br>
+                Libaspur, Samaypur Badli,<br>
+                New Delhi, India
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="/images/logo.svg" alt="BDC Industries Logo" class="footer-logo" />
+          <p class="footer-tagline">Deals and manufacturer in Gas Stove and its parts. All types of mixing tube, LPG gas stove, burner etc.</p>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-heading">Corporate Office & Works</h4>
+          <p><strong>Narayan Singh</strong> (Owner)</p>
+          <address>
+            <a href="https://maps.google.com/?q=C-26, Ambey Garden, Libaspur, Samaypur Badli, New Delhi, India" target="_blank" class="contact-link" rel="noopener noreferrer">
+              C-26, Ambey Garden,<br>
+              Libaspur, Samaypur Badli,<br>
+              New Delhi, India
+            </a>
+          </address>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="footer-heading">Contact Details</h4>
+          <p><a href="tel:+919313074054" class="contact-link">+91 9313074054</a></p>
+          <p><a href="tel:+919999391754" class="contact-link">+91 9999391754</a></p>
+          <p><a href="mailto:Sumit.pdps@gmail.com" class="contact-link">Sumit.pdps@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BDC Industries (Balaji Die Casting Industries). All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+      <!-- Call Button -->
+      <a href="tel:+919313074054" class="call-btn" aria-label="Call Us">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      </a>
+      <!-- WhatsApp Floating Button -->
+      <a href="https://wa.me/919313074054" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm.029 18.88c-1.161 0-2.305-.292-3.318-.844l-3.677.964.984-3.595c-.607-1.052-.927-2.246-.926-3.468.001-3.825 3.113-6.937 6.937-6.937 1.856.001 3.598.723 4.907 2.034 1.31 1.311 2.031 3.054 2.03 4.908-.001 3.825-3.113 6.938-6.937 6.938z"/></svg>
+    </a>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
