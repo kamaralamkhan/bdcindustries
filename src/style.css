@@ -660,6 +660,22 @@ h1, h2, h3, h4, .eyebrow {
     padding-top: 8rem;
     gap: 4rem;
   }
+  
+  /* Force hero text visibility on mobile */
+  .hero-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    position: relative !important;
+    z-index: 50 !important;
+    display: block !important;
+  }
+  .hero-content [data-animate="fade-up"] {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+
   .hero-subtitle {
     margin: 0 auto 2.5rem;
   }
