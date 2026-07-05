@@ -264,7 +264,7 @@ h1, h2, h3, h4, .eyebrow {
 
 @keyframes scrollVertical {
   0% { transform: translateY(0); }
-  100% { transform: translateY(calc(-3 * 380px)); }
+  100% { transform: translateY(calc(-5 * 380px)); }
 }
 
 /* Ticker */
